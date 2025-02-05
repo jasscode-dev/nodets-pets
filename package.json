@@ -1,0 +1,33 @@
+{
+  "name": "nodets-pets",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+     "start-dev": "nodemon -e ts,json,mustache src/server.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jasscode-dev/nodets-pets.git"
+   
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jasscode-dev/nodets-pets/issues"
+  },
+  "homepage": "https://github.com/jasscode-dev/nodets-pets#readme",
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/mustache-express": "^1.2.5",
+    "@types/node": "^22.13.1",
+    "typescript": "^5.7.3"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mustache-express": "^1.3.2"
+  }
+}
