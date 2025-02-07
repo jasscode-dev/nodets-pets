@@ -3,22 +3,19 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-   "engenes":{
-    "node":"22.x"
-
-   },
+  "engenes": {
+    "node": "22.x"
+  },
   "scripts": {
-     "build": "tsc",
+    "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1",
     "postinstall": "npm run build && copyfiles -u 1 src/**/*.mustache dist/",
-     "start-dev": "nodemon -e ts,json,mustache src/server.ts",
-     "start":"node dist/server.js"
-
+    "start-dev": "nodemon -e ts,json,mustache src/server.ts",
+    "start": "node dist/server.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jasscode-dev/nodets-pets.git"
-   
   },
   "keywords": [],
   "author": "",
@@ -31,6 +28,7 @@
     "@types/express": "^5.0.0",
     "@types/mustache-express": "^1.2.5",
     "@types/node": "^22.13.1",
+    "copyfiles": "^2.4.1",
     "typescript": "^5.7.3"
   },
   "dependencies": {
