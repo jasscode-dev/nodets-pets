@@ -3,9 +3,17 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+   "engenes":{
+    "node":"22.x"
+
+   },
   "scripts": {
+     "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1",
-     "start-dev": "nodemon -e ts,json,mustache src/server.ts"
+    "postinstall": "npm run build && copyfiles -u 1 src/**/*.mustache dist/",
+     "start-dev": "nodemon -e ts,json,mustache src/server.ts",
+     "start":"node dist/server.js"
+
   },
   "repository": {
     "type": "git",
